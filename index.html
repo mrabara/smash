@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./img/redball.png" sizes="96x96">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SMASH!</title>
+</head>
+<body id="home" class="scrollspy"> 
+    <div id="music" class="modal s12">
+        <div class="modal-content center">
+            <h4 class="center white-text">Music Controls</h4>
+            <audio id="audio" controls loop>
+                <source src="./sound/game_intro.mp3" type="audio/mp3">
+            </audio>
+            <div class="close-modal">
+                <a class="modal-close btn-floating btn-large waves-effect waves-light red darken-5 pulse"><i class="material-icons">close</i></a>
+            </div>
+        </div>
+    </div>
+    <div id="rules" class="modal s12">
+       <div class="modal-content">
+        <h3 class="white-text center">How to Play</h2>
+            <p class="flow-text white-text center">
+                Use your left and right arrow keys to move the paddle, bounce the ball up with the paddle 
+                to break the blocks. If you miss the ball, your score and the blocks will reset.
+            </p>
+            <p class="flow-text white-text center"> To start playing, click the play button.</p>
+            <div class="close-modal">
+                <a class="modal-close btn-floating btn-large waves-effect waves-light red darken-5 pulse"><i class="material-icons">close</i></a>
+            </div>
+       </div>
+    </div>
+    <div id="game-modal" class="modal s12">
+        <div class="modal-content center">
+            <h4 class="center white-text">You Lose!</h4>
+            <div class="close-modal">
+                <a class="modal-close btn-floating btn-large waves-effect waves-light red darken-5 pulse"><i class="material-icons">close</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid s12">
+        <a href="#music" class="btn btn-small red black-text darken-4 waves-effect waves-light rules-btn modal-trigger tooltipped" data-position="bottom" data-tooltip="Music Settings" id="music-btn"><i class="material-icons white-text">volume_up</i></a>
+        <a href="#rules" class="btn btn-small red black-text darken-4 waves-effect waves-light modal-trigger tooltipped" data-position="bottom" data-tooltip="How to play" id="rules-btn"><i class="material-icons white-text">info</i></a>
+        <a href="#game-section" class="btn btn-small red black-text darken-4 waves-effect waves-light tooltipped" data-position="bottom" data-tooltip="Play Game" id="play-btn"><i class="material-icons md-36 white-text">play_for_work</i></a>
+    </div>
+    <div id="game-section" class="scrollspy s12">
+        <canvas id="canvas"></canvas>
+        <a href="#home" id="home-btn" class="btn btn-small black-text red darken-4 waves-effect home tooltipped" data-position="bottom" data-tooltip="Home"><i class="material-icons white-text">home</i></a>
+        <a id="start-btn" class="btn btn-small black-text red darken-4 waves-effect start tooltipped" data-position="bottom" data-tooltip="Start Game"><i class="material-icons white-text">play_arrow</i></a>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

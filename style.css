@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.container-fluid {
+  height: 100vh;
+  position: relative;
+  background: url('./img/smash_background.png');
+  background-size: cover;
+  background-position-x: center;
+}
+
+.btn {
+  border-radius: 5px;
+}
+
+#music-btn {
+  position: absolute;
+  top: 1%;
+  left: 16%;
+  font-weight: bold;
+  box-shadow: 0px 0px 8px 0.2px rgba(255, 255, 255, 0.2);
+}
+
+#rules-btn {
+  position: absolute;
+  top: 1%;
+  left: 20%;
+  font-weight: bold;
+  box-shadow: 0px 0px 8px 0.2px rgba(255, 255, 255, 0.2);
+}
+
+#play-btn {
+  position: absolute;
+  top: 1%;
+  left: 24%;
+  font-weight: bold;
+  box-shadow: 0px 0px 8px 0.2px rgba(255, 255, 255, 0.2);
+}
+
+#home-btn {
+  position: absolute;
+  top: 1%;
+  left: 16%;
+  box-shadow: 0px 0px 8px 0.2px rgba(255, 255, 255, 0.2);
+}
+
+#start-btn {
+  position: absolute;
+  top: 1%;
+  left: 20%;
+  box-shadow: 0px 0px 8px 0.2px rgba(255, 255, 255, 0.2);
+}
+
+#music {
+  width: 40%;
+  background: rgba(255, 0, 0, 0.5);
+  margin: 10% auto;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+}
+
+#audio {
+  margin: 10% auto;
+  border-radius: 25px;
+}
+
+#rules {
+  background: rgba(255, 0, 0, 0.5);
+  margin: 10% auto;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+}
+
+.close-modal {
+  margin-top: 2%;
+  text-align: center;
+}
+
+.material-tooltip {
+  background: rgba(255, 0, 0, 0.6);
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+#game-section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background: url('./img/black-red1.png');
+  background-size: cover;
+  background-position-x: center;
+  position: relative;
+  height: 100vh;
+}
+
+#canvas {
+  width: 50%;
+  height: 65%;
+  margin-top: 13%;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  position: absolute;
+}
+
+/* 
+@media {
+  body {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+} */
